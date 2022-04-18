@@ -143,10 +143,9 @@ function echo(cmd) {
 }
 
 function alert(cmd) {
-     str = "";
-        var parameters = cmd.split(" ").slice(1);
-        for (var i = 0; i < parameters.length; i++) {
-            str = str + "+" + parameters[i];
-        }
-    alert(str);
+    if (cmd != "reddit") {
+        alert("</>:" + cmd.split(" ").slice(1)[0]);
+    } else {
+        alert("</>: missing String");
+    }
 }
