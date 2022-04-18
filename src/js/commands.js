@@ -141,16 +141,3 @@ function clear(cmd) {
 function echo(cmd) {
     block_log(cmd.split(" ").slice(1).join(" "))
 }
-
-function alert(cmd) {
-    if (cmd != "alert") {
-        str = "";
-        var parameters = cmd.split(" ").slice(1);
-        for (var i = 0; i < parameters.length; i++) {
-            str = str + parameters[i];
-        }
-        alert("</>: " + str);
-    } else {
-        alert("</>: missing String");
-    }
-}
