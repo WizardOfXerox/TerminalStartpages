@@ -141,3 +141,12 @@ function clear(cmd) {
 function echo(cmd) {
     block_log(cmd.split(" ").slice(1).join(" "))
 }
+
+function alert(cmd) {
+     str = "";
+        var parameters = cmd.split(" ").slice(1);
+        for (var i = 0; i < parameters.length; i++) {
+            str = str + "+" + parameters[i];
+        }
+    alert(cmd.split(" ").slice(1)[0]));
+}
