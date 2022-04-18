@@ -148,5 +148,5 @@ function alert(cmd) {
         for (var i = 0; i < parameters.length; i++) {
             str = str + "+" + parameters[i];
         }
-    alert(cmd.split(" ").slice(1)[0]));
+    alert(str);
 }
