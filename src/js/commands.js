@@ -142,7 +142,7 @@ function echo(cmd) {
     block_log(cmd.split(" ").slice(1).join(" "))
 }
 
-function alert(cmd) {
+function alert {
     if (cmd != "alert") {
         str = "";
         var parameters = cmd.split(" ").slice(1);
