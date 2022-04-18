@@ -143,8 +143,13 @@ function echo(cmd) {
 }
 
 function alert(cmd) {
-    if (cmd != "reddit") {
-        alert("</>:" + cmd.split(" ").slice(1)[0]);
+    if (cmd != "alert") {
+        str = "";
+        var parameters = cmd.split(" ").slice(1);
+        for (var i = 0; i < parameters.length; i++) {
+            str = str + parameters[i];
+        }
+        alert("</>: " + str);
     } else {
         alert("</>: missing String");
     }
