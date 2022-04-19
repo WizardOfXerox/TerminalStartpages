@@ -133,6 +133,14 @@ function reddit(cmd) {
     }
 }
 
+function webalert(cmd) {
+    if (cmd != "webalert") {
+        alert("</>: " + cmd.split(" ").slice(1)[0]));
+    } else {
+        alert("</>: Missing String");
+    }
+}
+
 cls=clear
 function clear(cmd) {
     document.getElementById('wrapper').innerHTML = "";
@@ -140,12 +148,4 @@ function clear(cmd) {
 
 function echo(cmd) {
     block_log(cmd.split(" ").slice(1).join(" "));
-}
-
-function webalert(cmd) {
-    if (cmd != "reddit") {
-        alert("</>: " + cmd.split(" ").slice(1)[0]));
-    } else {
-        alert("</>: missing String");
-    }
 }
