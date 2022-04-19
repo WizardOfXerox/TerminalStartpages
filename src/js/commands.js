@@ -11,6 +11,7 @@ function google(cmd) {
     }
 }
 
+yt=youtube
 function youtube(cmd) {
     if (cmd != "youtube") {
         str = "";
