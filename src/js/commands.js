@@ -133,16 +133,6 @@ function reddit(cmd) {
     }
 }
 
-function webalert(cmd) {
-    if (cmd != "webalert") {
-        var parameters = cmd.split(" ").slice(1);
-        window.open("https://www.reddit.com/");
-        //alert("</>: " + parameters);
-    } else {
-        alert("</>: Missing String");
-    }
-}
-
 cls=clear
 function clear(cmd) {
     document.getElementById('wrapper').innerHTML = "";
