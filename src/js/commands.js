@@ -135,7 +135,8 @@ function reddit(cmd) {
 
 function webalert(cmd) {
     if (cmd != "webalert") {
-        alert("</>: " + cmd.split(" ").slice(1)[0]));
+        var parameters = cmd.split(" ").slice(1);
+        alert("</>: " + parameters);
     } else {
         alert("</>: Missing String");
     }
